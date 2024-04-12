@@ -29,12 +29,3 @@ npm install
 npm start
 
 npm run build
-
-
-### `npm run lint:js`
-
-Run eslint on all the JS and JSX files in the project.
-
-### `npm run lint:css`
-
-Run stylelint on all the CSS files in the project.
