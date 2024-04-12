@@ -1,0 +1,7 @@
+.container {
+  box-sizing: border-box;
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+}

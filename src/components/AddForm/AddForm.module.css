@@ -1,0 +1,43 @@
+.form-wrapper {
+  width: 100%;
+  background-color: var(--color-light-accent);
+  font-weight: 500;
+}
+
+.form {
+  position: relative;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.form__input {
+  width: 100%;
+}
+
+.form__label {
+  display: none;
+}
+
+.form__button {
+  flex: none;
+  width: 140px;
+  padding: 10px;
+  line-height: 20px;
+}
+
+.form__message {
+  top: calc(100% + 10px);
+  left: 0;
+  right: 150px;
+}
+
+@media screen and (max-width: 400px) {
+  .form-wrapper {
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  .form__button {
+    width: 100px;
+  }
+}

@@ -1,0 +1,16 @@
+.controls {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-light-accent);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 400px) {
+  .controls {
+    padding: 15px;
+    font-size: 14px;
+  }
+}

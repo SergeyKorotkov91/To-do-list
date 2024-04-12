@@ -1,0 +1,41 @@
+.select {
+  position: relative;
+  box-sizing: border-box;
+  width: 50%;
+  padding: 0;
+  margin: 0;
+  color: inherit;
+  cursor: default;
+  font: inherit;
+}
+
+.select__label {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+.select__input {
+  width: 100%;
+  cursor: inherit;
+}
+
+.select__icon {
+  position: absolute;
+  bottom: 10%;
+  right: 3px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.select__icon_expanded {
+  transform: rotate(-180deg);
+}
+
+.select__menu {
+  position: absolute;
+  top: calc(100% + 2px);
+  left: 0;
+  width: 100%;
+  cursor: inherit;
+  box-shadow: var(--box-shadow);
+}

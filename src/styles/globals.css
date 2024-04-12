@@ -1,0 +1,53 @@
+@import-normalize;
+
+@import url("./fonts.css");
+
+:root {
+  font-size: 112.5%;
+
+  --color-light: #fbfbfb;
+  --color-gray: #9a9a9a;
+  --color-dark: #121212;
+  --color-red: #ee4036;
+  --color-light-blue: #baeafe;
+  --color-sky-blue: #87cefa;
+  --color-blue: #4e86ff;
+  --color-main: var(--color-light-blue);
+  --color-light-accent: var(--color-sky-blue);
+  --color-dark-accent: var(--color-blue);
+  --color-bg: var(--color-light);
+  --color-menu-hover: var(--color-light-blue);
+  --color-menu-active: var(--color-blue);
+  --color-error: var(--color-red);
+  --color-error-bg: #ffc6d2;
+  --color-input-normal: var(--color-gray);
+  --color-input-hover: var(--color-blue);
+  --color-input-focus: var(--color-dark);
+  --color-button-active: #fff;
+  --color-text: var(--color-dark);
+  --outline: 2px solid var(--color-dark);
+  --border-radius-small: 5px;
+  --box-shadow:
+    0 10px 20px -12px rgb(0 0 0 / 42%),
+    0 3px 20px 0 rgb(0 0 0 / 12%),
+    0 8px 10px -5px rgb(0 0 0 /20%);
+}
+
+body {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  background-color: var(--color-bg);
+  color: var(--color-dark);
+  font-family: Montserrat, Arial, sans-serif;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.body-no-scroll {
+  height: 100vh;
+  overflow-y: hidden;
+}

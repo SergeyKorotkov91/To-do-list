@@ -1,0 +1,71 @@
+.checkbox {
+  position: relative;
+  display: flex;
+  gap: 10px;
+  flex-flow: row nowrap;
+  outline: none;
+  border: none;
+  font: inherit;
+  line-height: inherit;
+  user-select: none;
+}
+
+.checkbox__text {
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  line-height: 25px;
+}
+
+.checkbox__input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkbox__mark {
+  display: block;
+  width: 25px;
+  height: 25px;
+  transition: all 0.3s linear;
+  background-color: var(--color-light);
+  outline: 2px solid var(--color-input-normal);
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.checkbox__input:focus ~ .checkbox__mark {
+  outline-color: var(--color-input-focus);
+  box-shadow: var(--box-shadow);
+}
+
+.checkbox__input:hover ~ .checkbox__mark {
+  outline: 2px solid var(--color-input-hover);
+  box-shadow: var(--box-shadow);
+}
+
+.checkbox__input:active ~ .checkbox__mark {
+  background-color: rgb(0 0 0 / 5%);
+}
+
+.checkbox__mark::after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid var(--color-dark);
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+.checkbox__input:checked ~ .checkbox__mark::after {
+  display: block;
+}

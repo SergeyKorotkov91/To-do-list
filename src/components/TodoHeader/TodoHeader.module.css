@@ -1,0 +1,14 @@
+.header {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media screen and (max-width: 400px) {
+  .header {
+    font-size: 1.5rem;
+  }
+}

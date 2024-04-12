@@ -1,0 +1,28 @@
+.app {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 30px;
+  width: 100%;
+  max-width: 700px;
+  padding: 30px 20px;
+  margin: 20px auto;
+  background-color: var(--color-main);
+  border: none;
+}
+
+@media screen and (max-width: 700px) {
+  .app {
+    gap: 20px;
+  }
+}
+
+@media
+  screen and (max-width: 400px) and (orientation: portrait),
+  screen and (max-height: 400px) and (orientation: landscape) {
+  .app {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px 10px;
+  }
+}
