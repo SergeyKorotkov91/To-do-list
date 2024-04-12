@@ -1,6 +1,6 @@
-# React Todo List
+# React To-do-List
 
-## Description
+## Описание
 
 Простой todo list сделанный на React.
 
